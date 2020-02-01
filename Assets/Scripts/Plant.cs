@@ -41,19 +41,23 @@ public class Plant : MonoBehaviour
 
         if (stem.stemPositions.Count / spawnLeafEverySegments > leaves.Count)
         {
-            foreach(Leaf leaf in leaves)
-            {
-                leaf.Grow();
-            }
-
-            Leaf newLeaf = Instantiate(leafPrefab);
-            newLeaf.transform.position = stem.GetHeadPosition();
-            newLeaf.transform.parent = transform;
+            Leaf leaf = Instantiate(leafPrefab);
+            leaf.name = "Leaf " + leaves.Count;
+            leaf.transform.position = stem.GetHeadPosition();
+            leaf.transform.parent = transform;
+            leaf.flip = leaves.Count % 2 != 0;
 
             Vector3 growDirection = stem.GetGrowthDirection();
-            newLeaf.transform.rotation = Quaternion.Euler(growDirection.y, growDirection.x, growDirection.z);
+            Vector3 leafDirection = new Vector3(growDirection.y, -growDirection.x, growDirection.z);
+            leaf.transform.right = leafDirection;
 
-            leaves.Add(newLeaf);
+            leaves.Add(leaf);
+
+            foreach (Leaf l in leaves)
+            {
+                l.Grow();
+            }
+
         }
     }
 }

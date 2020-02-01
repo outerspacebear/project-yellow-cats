@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35657b285af90114cb767c52e2e56315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 1
+  rotateSpeed: 3
   aimAtMouse: 1
   target: {fileID: 0}
   onlyWhenGrowing: 1
