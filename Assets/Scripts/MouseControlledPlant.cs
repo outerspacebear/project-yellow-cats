@@ -36,7 +36,7 @@ public class MouseControlledPlant : MonoBehaviour
             if (delta.magnitude > segmentLength)
             {
                 lastSegmentPosition = newPosition;
-                mainStem.AddStepPosition(newPosition);
+                mainStem.AddStemPosition(newPosition);
             }
         }
 

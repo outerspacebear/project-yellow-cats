@@ -149,6 +149,10 @@ MonoBehaviour:
   objectAimer2D: {fileID: 0}
   lastHeadPosition: {x: -Infinity, y: -Infinity, z: 0}
   segmentLength: 0.2
+  leafPrefab: {fileID: 7052926189932572985, guid: ea3a7f1df578e4ca99d51a4a221bc6a8,
+    type: 3}
+  leaves: []
+  spawnLeafEverySegments: 10
 --- !u!114 &3581479557031877291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e021850e4c7b04cf4902e5284ce433e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lineRenderer: {fileID: 3581479557031877289}
   baseWidth: 1
   headWidth: 0.1
   fullyGrownAtLength: 100

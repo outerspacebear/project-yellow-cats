@@ -13,6 +13,11 @@ public class Plant : MonoBehaviour
     public Vector3 lastHeadPosition;
     public float segmentLength = 1.0f;
 
+    public Leaf leafPrefab;
+    public List<Leaf> leaves = new List<Leaf>();
+    public int spawnLeafEverySegments = 10;
+
+
     void Start()
 	{
         stem = GetComponent<Stem>();
@@ -31,7 +36,24 @@ public class Plant : MonoBehaviour
         if (distance >= segmentLength)
         {
             lastHeadPosition = newHeadPosition;
-            stem.AddStepPosition(newHeadPosition);
+            stem.AddStemPosition(newHeadPosition);
+        }
+
+        if (stem.stemPositions.Count / spawnLeafEverySegments > leaves.Count)
+        {
+            foreach(Leaf leaf in leaves)
+            {
+                leaf.Grow();
+            }
+
+            Leaf newLeaf = Instantiate(leafPrefab);
+            newLeaf.transform.position = stem.GetHeadPosition();
+            newLeaf.transform.parent = transform;
+
+            Vector3 growDirection = stem.GetGrowthDirection();
+            newLeaf.transform.rotation = Quaternion.Euler(growDirection.y, growDirection.x, growDirection.z);
+
+            leaves.Add(newLeaf);
         }
     }
 }

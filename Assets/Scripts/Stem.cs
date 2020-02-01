@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Stem : MonoBehaviour
 {
-    LineRenderer lineRenderer;
+    public LineRenderer lineRenderer;
 
     public float baseWidth = 1.0f;
     public float headWidth = 0.1f;
@@ -15,12 +15,11 @@ public class Stem : MonoBehaviour
 
     public float currentShakeDirection = 0.0f;
 
-    public List<Vector3> stemPositions;
+    public List<Vector3> stemPositions = new List<Vector3>();
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        lineRenderer = gameObject.GetComponent<LineRenderer>();
         lineRenderer.startWidth = baseWidth;
         lineRenderer.endWidth = headWidth;
     }
@@ -30,7 +29,7 @@ public class Stem : MonoBehaviour
         stemPositions = positions;
     }
 
-    public void AddStepPosition(Vector3 position)
+    public void AddStemPosition(Vector3 position)
     {
         stemPositions.Add(position);
     }
@@ -45,10 +44,23 @@ public class Stem : MonoBehaviour
 
     public Vector3 GetHeadPosition()
     {
-        if (lineRenderer.positionCount > 0)
-            return lineRenderer.GetPosition(lineRenderer.positionCount - 1);
+        if (stemPositions.Count > 0)
+        {
+            Vector3 headPosition = stemPositions[stemPositions.Count - 1];
+            Debug.Log("count: " + stemPositions.Count + " Head Position" + headPosition);
+            return headPosition;
+        }
 
         return transform.position;
+    }
+
+    public Vector3 GetGrowthDirection()
+    {
+        if (stemPositions.Count > 1)
+        {
+            return stemPositions[stemPositions.Count - 1] - stemPositions[stemPositions.Count - 2];
+        }
+        return Vector3.zero;
     }
 
     void Update()
