@@ -224,7 +224,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 10
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.3
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -298,11 +298,11 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 1, y: -0.52}
-  m_ConnectedAnchor: {x: 0, y: -0.104003906}
-  m_UseMotor: 0
+  m_ConnectedAnchor: {x: -0.019958496, y: -0.104003906}
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
+    m_MotorSpeed: 10
+    m_MaximumMotorForce: 0.1
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: -7
@@ -550,11 +550,11 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -1, y: -0.52}
-  m_ConnectedAnchor: {x: 0, y: -0.104003906}
-  m_UseMotor: 0
+  m_ConnectedAnchor: {x: 0.019958496, y: -0.104003906}
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
+    m_MotorSpeed: 10
+    m_MaximumMotorForce: 0.1
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: -7
@@ -573,7 +573,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 10
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.3
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -587,7 +587,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 588829865, guid: d8f089ab62cd34d4b8472e44e0a31a2b, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -660,6 +660,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3295886757056302461, guid: d8f089ab62cd34d4b8472e44e0a31a2b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100000
+      objectReference: {fileID: 0}
     - target: {fileID: 3295886757056302463, guid: d8f089ab62cd34d4b8472e44e0a31a2b,
         type: 3}
       propertyPath: rotateSpeed
@@ -668,7 +673,7 @@ PrefabInstance:
     - target: {fileID: 3295886757351490053, guid: d8f089ab62cd34d4b8472e44e0a31a2b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 3295886758599991752, guid: d8f089ab62cd34d4b8472e44e0a31a2b,
         type: 3}
@@ -701,6 +706,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 588829865, guid: d8f089ab62cd34d4b8472e44e0a31a2b, type: 3}
+    - target: {fileID: 3295886758599991753, guid: d8f089ab62cd34d4b8472e44e0a31a2b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.22
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f089ab62cd34d4b8472e44e0a31a2b, type: 3}
