@@ -10,6 +10,8 @@ public class Plant : MonoBehaviour
     public GrowthController growthController;
     public ObjectAimer2D objectAimer2D;
 
+    public int maxLength = 100;             // a limit to the length. Plant will not grow further.
+
     public Vector3 lastHeadPosition;
     public float growthThreashold = 0.1f;   // threshold for preventing growing on tiny movements.
                                             // E.g. when physics objects collide or
@@ -29,20 +31,36 @@ public class Plant : MonoBehaviour
     }
 
 
+    public void StartGrowing()
+    {
+        if (stem.Length() < maxLength)
+            growthController.StartGrowing();
+        else
+            growthController.FinishGrowing();
+    }
+
+    public void Grow()
+    {
+        if (stem.Length() < maxLength)
+            growthController.Grow();
+        else
+            growthController.FinishGrowing();
+    }
+
+    public void FinishGrowing()
+    {
+        if (stem.Length() < maxLength)
+            growthController.FinishGrowing();
+    }
+
+    public void Retract()
+    {
+        stem.RemoveStemPosition();
+        growthController.Retract(stem.GetHeadPosition(), stem.GetGrowthDirection());
+    }
+
     void Update()
 	{
-        if (Input.GetButtonDown("Grow"))
-            growthController.StartGrowing();
-        else if (Input.GetButton("Grow"))
-            growthController.Grow();
-        else if (Input.GetButtonUp("Grow"))
-            growthController.FinishGrowing();
-        else if (Input.GetButton("Retract"))
-        {
-            stem.RemoveStemPosition();
-            growthController.Retract(stem.GetHeadPosition(), stem.GetGrowthDirection());
-        }
-
         Vector3 newHeadPosition = head.transform.position;
         if (Vector3.Distance(lastHeadPosition, newHeadPosition) > growthThreashold)
         {
@@ -50,7 +68,7 @@ public class Plant : MonoBehaviour
             stem.AddStemPosition(newHeadPosition);
         }
 
-        int expectedLeavesCount = stem.stemPositions.Count / spawnLeafEverySegments;
+        int expectedLeavesCount = stem.Length() / spawnLeafEverySegments;
         if (expectedLeavesCount > leaves.Count)
         {
             // There should be more leaves. Spawn a new one
@@ -63,7 +81,7 @@ public class Plant : MonoBehaviour
             Vector3 growDirection = stem.GetGrowthDirection();
             Vector3 leafDirection = new Vector3(growDirection.y, -growDirection.x, growDirection.z);
             leaf.transform.right = leafDirection;
-            leaf.Spawn(stem.stemPositions.Count);
+            leaf.Spawn(stem.Length());
 
             leaves.Add(leaf);
         }
@@ -77,7 +95,7 @@ public class Plant : MonoBehaviour
 
         foreach (var l in leaves)
         {
-            l.Grow(stem.stemPositions.Count);
+            l.Grow(stem.Length());
         }
     }
 }

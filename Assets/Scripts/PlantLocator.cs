@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class PlantLocator : MonoBehaviour
 {
-    [SerializeField] public static GameObject currentPlant = null;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] public static Plant currentPlant = null;
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        if (currentPlant == null)
+            return;
+
+        if (Input.GetButtonDown("Grow"))
+            currentPlant.StartGrowing();
+        else if (Input.GetButton("Grow"))
+            currentPlant.Grow();
+        else if (Input.GetButtonUp("Grow"))
+            currentPlant.FinishGrowing();
+        else if (Input.GetButton("Retract"))
+            currentPlant.Retract();
     }
 }

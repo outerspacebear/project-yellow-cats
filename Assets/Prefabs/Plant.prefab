@@ -147,6 +147,7 @@ MonoBehaviour:
   head: {fileID: 2021745857639702241}
   growthController: {fileID: 0}
   objectAimer2D: {fileID: 0}
+  maxLength: 100
   lastHeadPosition: {x: -Infinity, y: -Infinity, z: 0}
   growthThreashold: 0.1
   leafPrefab: {fileID: 7052926189932572985, guid: ea3a7f1df578e4ca99d51a4a221bc6a8,

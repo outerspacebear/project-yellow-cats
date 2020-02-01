@@ -6,7 +6,7 @@ using UnityEngine;
 public class Attractor : MonoBehaviour
 {
     [SerializeField] float attractionStopAngle = 10f;
-    [SerializeField] GameObject targetObject;
+    [SerializeField] Plant targetObject;
     [SerializeField] string triggerObjectTag = "Player";
     [SerializeField] string groundTag = "Ground";
     private SpringJoint2D spring;
