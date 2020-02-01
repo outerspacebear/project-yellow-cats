@@ -47,7 +47,6 @@ public class Stem : MonoBehaviour
         if (stemPositions.Count > 0)
         {
             Vector3 headPosition = stemPositions[stemPositions.Count - 1];
-            Debug.Log("count: " + stemPositions.Count + " Head Position" + headPosition);
             return headPosition;
         }
 

@@ -34,7 +34,6 @@ public class Plant : MonoBehaviour
 	{
         Vector3 newHeadPosition = head.transform.position;
         float distance = Vector3.Distance(newHeadPosition, lastHeadPosition);
-        Debug.Log("Distance = " + distance + " lastHeadPosition: " + lastHeadPosition + " newHeadPosition: " + newHeadPosition);
         if (distance >= segmentLength)
         {
             lastHeadPosition = newHeadPosition;
