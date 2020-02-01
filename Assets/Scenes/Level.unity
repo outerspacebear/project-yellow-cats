@@ -1689,7 +1689,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: -1.9, y: 1.36}
-  m_ConnectedAnchor: {x: -0.25, y: 0}
+  m_ConnectedAnchor: {x: -1.309, y: 0.23300004}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

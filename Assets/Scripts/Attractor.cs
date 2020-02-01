@@ -37,8 +37,12 @@ public class Attractor : MonoBehaviour
         if(collision.gameObject.CompareTag(groundTag))
         {
             readyForAttraction = true;
+            if(targetObject == null)
+            {
+                targetObject = PlantLocator.currentPlant;
+            }
         }
-        if(collision.gameObject.CompareTag(triggerObjectTag) && readyForAttraction && Vector2.Angle(targetObject.transform.up, Vector2.up) >= attractionStopAngle)
+        else if(collision.gameObject.CompareTag(triggerObjectTag) && readyForAttraction && Vector2.Angle(targetObject.transform.up, Vector2.up) >= attractionStopAngle)
         {
             spring.connectedBody = targetObject.GetComponent<Rigidbody2D>();
             spring.enabled = true;

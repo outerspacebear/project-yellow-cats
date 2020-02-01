@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlantLocator : MonoBehaviour
 {
-    [SerializeField] public static GameObject currentPlant;
+    [SerializeField] public static GameObject currentPlant = null;
     // Start is called before the first frame update
     void Start()
     {
