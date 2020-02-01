@@ -7,16 +7,21 @@ public class ObjectAimer2D : MonoBehaviour
     [SerializeField] float speed = 5f;
     [SerializeField] bool aimAtMouse = true;
     [SerializeField] Transform target;
+    [SerializeField] bool onlyWhenRigidbodyMoving = true;
+    private Rigidbody2D mRigidbody;
     // Start is called before the first frame update
     void Start()
     {
-        
+        mRigidbody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector2 direction = Vector2.zero;
+        if (onlyWhenRigidbodyMoving && (Mathf.Abs(mRigidbody.velocity.x) < 0.01f && Mathf.Abs(mRigidbody.velocity.y) < 0.01f))
+            return;
+
         if(aimAtMouse)
         {
             direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
