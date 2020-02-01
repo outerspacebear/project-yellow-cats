@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c61f1a556dc3e4e818b7f669bca5d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plant: {fileID: 3581479557031877294, guid: 234941b57472c43c9a18075fe6bff501, type: 3}
+  plant: {fileID: 3581479557031877295, guid: 234941b57472c43c9a18075fe6bff501, type: 3}
   spawnForce: 0.1
   spawnDelay: 1
   moundColliders:
