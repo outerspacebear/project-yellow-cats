@@ -9,6 +9,7 @@ public class GrowthController : MonoBehaviour
     [SerializeField] float growthSpeed = 0.2f;
     [SerializeField] float extraDragTime = 1.0f;
 
+    [SerializeField] float startDrag = 5f;
     private float targetDrag;
     private float dragReductionPerSecond;
 
@@ -17,7 +18,7 @@ public class GrowthController : MonoBehaviour
     {
         mRigidbody = GetComponent<Rigidbody2D>();
         targetDrag = mRigidbody.drag;
-        dragReductionPerSecond = 1f - targetDrag;
+        dragReductionPerSecond = startDrag - targetDrag;
     }
 
     // Update is called once per frame
@@ -25,14 +26,18 @@ public class GrowthController : MonoBehaviour
     {
         if(Input.GetButtonDown("Grow"))
         {
-            mRigidbody.drag = 1;
+            mRigidbody.drag = startDrag;
         }
-        if (Input.GetButton("Grow"))
+        else if (Input.GetButton("Grow"))
         {
             if(mRigidbody.drag > targetDrag)
                 mRigidbody.drag -= dragReductionPerSecond * Time.deltaTime;
             mRigidbody.velocity = transform.up * growthSpeed;
             //Leave checkpoints as you grow?
+        }
+        else if(Input.GetButtonUp("Grow"))
+        {
+            mRigidbody.drag = startDrag;
         }
 
         else if(Input.GetButton("Retract"))
