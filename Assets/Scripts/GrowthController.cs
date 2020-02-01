@@ -6,7 +6,7 @@ using UnityEngine;
 public class GrowthController : MonoBehaviour
 {
     private Rigidbody2D mRigidbody;
-    [SerializeField] float speed = 0.2f;
+    [SerializeField] float growthSpeed = 0.2f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class GrowthController : MonoBehaviour
     {
         if (Input.GetButton("Grow"))
         {
-            mRigidbody.velocity = transform.up * speed;
+            mRigidbody.velocity = transform.up * growthSpeed;
             //Leave checkpoints as you grow?
         }
         else if(Input.GetButton("Retract"))

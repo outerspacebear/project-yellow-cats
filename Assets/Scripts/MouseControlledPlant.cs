@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Plant : MonoBehaviour
+public class MouseControlledPlant : MonoBehaviour
 {
     public Vector3 lastSegmentPosition = Vector2.negativeInfinity;
     public float segmentLength = 1.0f;

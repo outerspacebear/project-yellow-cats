@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectAimer2D : MonoBehaviour
 {
-    [SerializeField] float speed = 5f;
+    [SerializeField] float rotateSpeed = 5f;
     [SerializeField] bool aimAtMouse = true;
     [SerializeField] Transform target;
     [SerializeField] bool onlyWhenRigidbodyMoving = true;
@@ -32,6 +32,6 @@ public class ObjectAimer2D : MonoBehaviour
         }
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90;
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, speed * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotateSpeed * Time.deltaTime);
     }
 }
