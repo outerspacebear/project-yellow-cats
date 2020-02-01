@@ -6,7 +6,7 @@ using UnityEngine;
 public class GrowthController : MonoBehaviour
 {
     private Rigidbody2D mRigidbody;
-    [SerializeField] float speed = 0.2f;
+    [SerializeField] float growthSpeed = 0.2f;
     [SerializeField] float extraDragTime = 1.0f;
 
     private float targetDrag;
@@ -31,7 +31,7 @@ public class GrowthController : MonoBehaviour
         {
             if(mRigidbody.drag > targetDrag)
                 mRigidbody.drag -= dragReductionPerSecond * Time.deltaTime;
-            mRigidbody.velocity = transform.up * speed;
+            mRigidbody.velocity = transform.up * growthSpeed;
             //Leave checkpoints as you grow?
         }
 
