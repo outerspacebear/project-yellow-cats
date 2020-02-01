@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Stem : MonoBehaviour
 {
-    public Color c1 = new Color(0, 0.4f, 0);
-    public Color c2 = new Color(0, 0.8f, 0);
     LineRenderer lineRenderer;
 
     public float baseWidth = 1.0f;
@@ -23,20 +21,8 @@ public class Stem : MonoBehaviour
     void Start()
     {
         lineRenderer = gameObject.GetComponent<LineRenderer>();
-        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
-        lineRenderer.widthMultiplier = 1.0f;
-        lineRenderer.positionCount = 0;
-        lineRenderer.startWidth = 1.0f;
-        lineRenderer.endWidth = 0.1f;
-
-        // A simple 2 color gradient with a fixed alpha of 1.0f.
-        float alpha = 1.0f;
-        Gradient gradient = new Gradient();
-        gradient.SetKeys(
-            new GradientColorKey[] { new GradientColorKey(c1, 0.0f), new GradientColorKey(c2, 1.0f) },
-            new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.0f), new GradientAlphaKey(alpha, 1.0f) }
-        );
-        lineRenderer.colorGradient = gradient;
+        lineRenderer.startWidth = baseWidth;
+        lineRenderer.endWidth = headWidth;
     }
 
     public void SetStemPositions(List<Vector3> positions)

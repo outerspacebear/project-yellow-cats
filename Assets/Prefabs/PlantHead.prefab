@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3295886757056302461}
   - component: {fileID: 3295886757056302463}
   m_Layer: 5
-  m_Name: TestLeafHead
+  m_Name: PlantHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35657b285af90114cb767c52e2e56315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.8
+  rotateSpeed: 5
   aimAtMouse: 1
   target: {fileID: 0}
   onlyWhenGrowing: 1
