@@ -11,13 +11,10 @@ public class Plant : MonoBehaviour
     public ObjectAimer2D objectAimer2D;
 
     public Vector3 lastHeadPosition;
-    public float segmentLength = 1.0f;
 
     public Leaf leafPrefab;
     public List<Leaf> leaves = new List<Leaf>();
     public int spawnLeafEverySegments = 10;
-
-    int lastStemCount = 0;
 
     void Start()
 	{
@@ -26,22 +23,34 @@ public class Plant : MonoBehaviour
         objectAimer2D = GetComponentInChildren<ObjectAimer2D>();
 
         lastHeadPosition = transform.position;
-        lastStemCount = stem.stemPositions.Count;
     }
 
 
     void Update()
 	{
+        if (Input.GetButtonDown("Grow"))
+            growthController.StartGrowing();
+        else if (Input.GetButton("Grow"))
+            growthController.Grow();
+        else if (Input.GetButtonUp("Grow"))
+            growthController.FinishGrowing();
+        else if (Input.GetButton("Retract"))
+        {
+            stem.RemoveStemPosition();
+            growthController.Retract(stem.GetHeadPosition(), stem.GetGrowthDirection());
+        }
+
         Vector3 newHeadPosition = head.transform.position;
-        float distance = Vector3.Distance(newHeadPosition, lastHeadPosition);
-        if (distance >= segmentLength)
+        if (lastHeadPosition  != newHeadPosition)
         {
             lastHeadPosition = newHeadPosition;
             stem.AddStemPosition(newHeadPosition);
         }
 
-        if (stem.stemPositions.Count / spawnLeafEverySegments > leaves.Count)
+        int expectedLeavesCount = stem.stemPositions.Count / spawnLeafEverySegments;
+        if (expectedLeavesCount > leaves.Count)
         {
+            // There should be more leaves. Spawn a new one
             Leaf leaf = Instantiate(leafPrefab);
             leaf.name = "Leaf " + leaves.Count;
             leaf.transform.position = stem.GetHeadPosition();
@@ -51,17 +60,21 @@ public class Plant : MonoBehaviour
             Vector3 growDirection = stem.GetGrowthDirection();
             Vector3 leafDirection = new Vector3(growDirection.y, -growDirection.x, growDirection.z);
             leaf.transform.right = leafDirection;
+            leaf.Spawn(stem.stemPositions.Count);
 
             leaves.Add(leaf);
         }
-
-        if (stem.stemPositions.Count > lastStemCount)
+        else if (expectedLeavesCount < leaves.Count && leaves.Count > 0)
         {
-            foreach (var l in leaves)
-            {
-                l.Grow();
-            }
-            lastStemCount = stem.stemPositions.Count;
+            // There is too many leaves. Remove the last one
+            int last = leaves.Count - 1;
+            Destroy(leaves[last]);
+            leaves.RemoveAt(last);
+        }
+
+        foreach (var l in leaves)
+        {
+            l.Grow(stem.stemPositions.Count);
         }
     }
 }

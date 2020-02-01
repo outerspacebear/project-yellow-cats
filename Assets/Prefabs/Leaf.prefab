@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6f27e6025dc47d582d7783620b700b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxScale: 1
-  growSpeed: 0.01
+  maxScale: 0.5
+  growSpeed: 0.005
   flip: 0
+  spawnedAtStemLength: 0
