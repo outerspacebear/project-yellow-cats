@@ -17,6 +17,7 @@ public class Attractor : MonoBehaviour
     void Start()
     {
         spring = GetComponent<SpringJoint2D>();
+        targetObject = PlantLocator.currentPlant;
     }
 
     // Update is called once per frame
