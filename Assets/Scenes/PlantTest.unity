@@ -214,7 +214,7 @@ PrefabInstance:
     - target: {fileID: 3295886757056302432, guid: d8f089ab62cd34d4b8472e44e0a31a2b,
         type: 3}
       propertyPath: m_Name
-      value: TestLeafHead
+      value: PlantHead
       objectReference: {fileID: 0}
     - target: {fileID: 3295886757056302434, guid: d8f089ab62cd34d4b8472e44e0a31a2b,
         type: 3}
