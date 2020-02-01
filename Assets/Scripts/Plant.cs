@@ -29,20 +29,29 @@ public class Plant : MonoBehaviour
     }
 
 
+    public void StartGrowing()
+    {
+        growthController.StartGrowing();
+    }
+
+    public void Grow()
+    {
+        growthController.Grow();
+    }
+
+    public void FinishGrowing()
+    {
+        growthController.FinishGrowing();
+    }
+
+    public void Retract()
+    {
+        stem.RemoveStemPosition();
+        growthController.Retract(stem.GetHeadPosition(), stem.GetGrowthDirection());
+    }
+
     void Update()
 	{
-        if (Input.GetButtonDown("Grow"))
-            growthController.StartGrowing();
-        else if (Input.GetButton("Grow"))
-            growthController.Grow();
-        else if (Input.GetButtonUp("Grow"))
-            growthController.FinishGrowing();
-        else if (Input.GetButton("Retract"))
-        {
-            stem.RemoveStemPosition();
-            growthController.Retract(stem.GetHeadPosition(), stem.GetGrowthDirection());
-        }
-
         Vector3 newHeadPosition = head.transform.position;
         if (Vector3.Distance(lastHeadPosition, newHeadPosition) > growthThreashold)
         {

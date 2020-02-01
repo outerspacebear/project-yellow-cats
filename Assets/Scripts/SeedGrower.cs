@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SeedGrower : MonoBehaviour
 {
-    [SerializeField] GameObject plant;
+    [SerializeField] Plant plant;
     [SerializeField] float spawnForce = 5f;
     [SerializeField] float spawnDelay = 1f;
     private float timeSinceSeedCollision = 0f;
@@ -26,7 +26,7 @@ public class SeedGrower : MonoBehaviour
             if(timeSinceSeedCollision >= spawnDelay)
             {
                 readyToSpawn = false;
-                var plantGuy = Instantiate(plant, seed.transform.position, transform.rotation);
+                var plantGuy = Instantiate(plant, seed.transform.position, transform.rotation) as Plant;
                 plantGuy.GetComponentInChildren<Rigidbody2D>().AddForce(transform.up * spawnForce);
                 PlantLocator.currentPlant = plantGuy;
                 Destroy(seed);
