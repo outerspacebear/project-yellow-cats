@@ -8,6 +8,9 @@ public class Stem : MonoBehaviour
     public Color c2 = new Color(0, 0.8f, 0);
     LineRenderer lineRenderer;
 
+    public float baseWidth = 1.0f;
+    public float headWidth = 0.1f;
+    public int fullyGrownAtLength = 10;
 
     public int shakeLastSegments = 10;
     public float shakeStrength = 5.0f;
@@ -54,10 +57,22 @@ public class Stem : MonoBehaviour
         }
     }
 
+    public Vector3 GetHeadPosition()
+    {
+        if (lineRenderer.positionCount > 0)
+            return lineRenderer.GetPosition(lineRenderer.positionCount - 1);
+
+        return transform.position;
+    }
+
     void Update()
     {
         // Start from the second segment so we don't shake the base
         int shakeStartsFrom = Mathf.Max(stemPositions.Count - shakeLastSegments, 1);
+
+        float widthDifference = baseWidth - headWidth;
+        lineRenderer.startWidth = headWidth + widthDifference * Mathf.Min((float)stemPositions.Count / fullyGrownAtLength, 1.0f);
+        lineRenderer.endWidth = headWidth;
 
         lineRenderer.positionCount = stemPositions.Count;
         float localShakeStrength = 0;
@@ -81,6 +96,5 @@ public class Stem : MonoBehaviour
                 Debug.DrawLine(lineRenderer.GetPosition(i), lineRenderer.GetPosition(i) + localShake, Color.blue);
             }
         }
-        Debug.Log("Shaking from " + shakeStartsFrom + " localShakeStrength " + localShakeStrength);
     }
 }
