@@ -9,6 +9,9 @@ public class PlantLocator : MonoBehaviour
 
     void Update()
     {
+        if (currentPlant == null)
+            return;
+
         if (Input.GetButtonDown("Grow"))
             currentPlant.StartGrowing();
         else if (Input.GetButton("Grow"))

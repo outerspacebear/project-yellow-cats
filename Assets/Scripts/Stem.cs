@@ -17,7 +17,6 @@ public class Stem : MonoBehaviour
 
     public List<Vector3> stemPositions = new List<Vector3>();
 
-    // Start is called before the first frame update
     void Awake()
     {
         lineRenderer.startWidth = baseWidth;
@@ -51,6 +50,11 @@ public class Stem : MonoBehaviour
         }
 
         return transform.position;
+    }
+
+    public int Length()
+    {
+        return stemPositions.Count;
     }
 
     public Vector3 GetGrowthDirection()
