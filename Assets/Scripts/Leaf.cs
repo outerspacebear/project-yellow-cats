@@ -7,11 +7,19 @@ public class Leaf : MonoBehaviour
     public float maxScale = 1.0f;
 
     public float growSpeed = 0.1f;
+    public bool flip = false;
+
+    float currentScale = 1.0f;
+    
+    private void Awake()
+    {
+        currentScale = transform.localScale.x;
+    }
 
     public void Grow()
     {
-        float currentScale = Mathf.Min(transform.localScale.x + growSpeed, maxScale);
-        transform.localScale = new Vector3(currentScale, currentScale, currentScale);
+        currentScale = Mathf.Min(currentScale + growSpeed, maxScale);
+        transform.localScale = new Vector3(currentScale * (flip ? -1 : 1), currentScale, currentScale);
     }
 
 }
