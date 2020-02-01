@@ -55,4 +55,12 @@ public class GrowthController : MonoBehaviour
             mRigidbody.velocity = mRigidbody.velocity * transform.up;
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Ground"))
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z);
+        }
+    }
 }

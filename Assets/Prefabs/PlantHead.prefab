@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 979402783}
   m_Layer: 5
   m_Name: PlantHead
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35657b285af90114cb767c52e2e56315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 3
+  rotateSpeed: 2
   aimAtMouse: 1
   target: {fileID: 0}
   onlyWhenGrowing: 1
@@ -95,7 +95,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3295886757056302432}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -113,16 +113,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.055236816, y: 0.020080566}
-      - {x: -0.0007324219, y: -0.048095703}
-      - {x: -0.057495117, y: 0.022155762}
+    - - {x: 0.04840088, y: 0.0038452148}
+      - {x: 0.0017089844, y: -0.032165527}
+      - {x: -0.05029297, y: 0.004699707}
+      - {x: -0.04156494, y: -0.008239746}
       - {x: -0.02545166, y: -0.02532959}
       - {x: -0.0107421875, y: -0.112854004}
-      - {x: -0.058532715, y: -0.099365234}
-      - {x: -0.14367676, y: -0.057678223}
+      - {x: -0.053344727, y: -0.10028076}
+      - {x: -0.06762695, y: -0.083740234}
+      - {x: -0.08404541, y: -0.07342529}
+      - {x: -0.21429443, y: -0.03765869}
+      - {x: -0.06677246, y: -0.09838867}
       - {x: 0.0041503906, y: -0.13238525}
-      - {x: 0.14111328, y: -0.05871582}
-      - {x: 0.07495117, y: -0.09057617}
+      - {x: 0.24914551, y: -0.03161621}
+      - {x: 0.17755127, y: -0.042907715}
+      - {x: 0.07598877, y: -0.07720947}
+      - {x: 0.055541992, y: -0.09643555}
       - {x: 0.012451172, y: -0.11352539}
       - {x: 0.023986816, y: -0.023864746}
 --- !u!1 &3295886757351490058
@@ -136,11 +142,9 @@ GameObject:
   - component: {fileID: 3295886757351490053}
   - component: {fileID: 3295886757351490052}
   - component: {fileID: 1939049579}
-  - component: {fileID: 1939049578}
-  - component: {fileID: 1939049577}
   m_Layer: 5
   m_Name: Right leaf
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -258,51 +262,6 @@ PolygonCollider2D:
       - {x: -0.76, y: -0.36499998}
       - {x: -0.66999996, y: -0.325}
       - {x: -0.42, y: -0.24499999}
---- !u!50 &1939049578
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3295886757351490058}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 10
-  m_LinearDrag: 0
-  m_AngularDrag: 0.3
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!233 &1939049577
-HingeJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3295886757351490058}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 3295886757056302461}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: -1, y: -0.52}
-  m_ConnectedAnchor: {x: 0.019958496, y: -0.104003906}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 10
-    m_MaximumMotorForce: 0.1
-  m_UseLimits: 1
-  m_AngleLimits:
-    m_LowerAngle: -7
-    m_UpperAngle: 7
 --- !u!1 &3295886758599991758
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,12 +272,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3295886758599991753}
   - component: {fileID: 3295886758599991752}
-  - component: {fileID: 588829864}
   - component: {fileID: 588829865}
-  - component: {fileID: 588829866}
   m_Layer: 5
   m_Name: Left leaf
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -387,27 +344,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &588829864
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3295886758599991758}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 10
-  m_LinearDrag: 0
-  m_AngularDrag: 0.3
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!60 &588829865
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -460,27 +396,3 @@ PolygonCollider2D:
       - {x: 1, y: -0.49499997}
       - {x: 1, y: -0.415}
       - {x: 0.91999996, y: -0.195}
---- !u!233 &588829866
-HingeJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3295886758599991758}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 3295886757056302461}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 1, y: -0.52}
-  m_ConnectedAnchor: {x: -0.019958496, y: -0.104003906}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 10
-    m_MaximumMotorForce: 0.1
-  m_UseLimits: 1
-  m_AngleLimits:
-    m_LowerAngle: -7
-    m_UpperAngle: 7
