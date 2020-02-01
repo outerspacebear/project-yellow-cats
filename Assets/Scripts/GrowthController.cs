@@ -21,38 +21,41 @@ public class GrowthController : MonoBehaviour
         dragReductionPerSecond = startDrag - targetDrag;
     }
 
+    public void StartGrowing()
+    {
+        mRigidbody.drag = startDrag;
+    }
+
+    public void Grow()
+    {
+        if (mRigidbody.drag > targetDrag)
+            mRigidbody.drag -= dragReductionPerSecond * Time.deltaTime;
+        mRigidbody.velocity = transform.up * growthSpeed;
+        //Leave checkpoints as you grow?
+    }
+
+    public void FinishGrowing()
+    {
+        mRigidbody.drag = startDrag;
+        foreach (var rigidbody in GetComponentsInChildren<Rigidbody2D>())
+        {
+            rigidbody.velocity = Vector2.zero;
+            rigidbody.angularVelocity = 0f;
+        }
+    }
+
+    public void Retract(Vector3 position, Vector3 forward)
+    {
+        transform.position = position;
+        transform.up = forward;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Grow"))
+        if(mRigidbody.velocity != Vector2.zero)
         {
-            mRigidbody.drag = startDrag;
-        }
-        else if (Input.GetButton("Grow"))
-        {
-            if(mRigidbody.drag > targetDrag)
-                mRigidbody.drag -= dragReductionPerSecond * Time.deltaTime;
-            mRigidbody.velocity = transform.up * growthSpeed;
-            //Leave checkpoints as you grow?
-        }
-        else if(Input.GetButtonUp("Grow"))
-        {
-            mRigidbody.drag = startDrag;
-            foreach(var rigidbody in GetComponentsInChildren<Rigidbody2D>())
-            {
-                rigidbody.velocity = Vector2.zero;
-                rigidbody.angularVelocity = 0f;
-            }
-        }
-
-        else if(Input.GetButton("Retract"))
-        {
-            //retract, not just move backwards
-            //maybe just turn back time - how?
-        }
-        else if(mRigidbody.velocity != Vector2.zero)
-        {
-            mRigidbody.velocity = mRigidbody.velocity * transform.up;
+        //    mRigidbody.velocity = mRigidbody.velocity * transform.up;
         }
     }
 

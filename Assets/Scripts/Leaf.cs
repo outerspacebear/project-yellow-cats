@@ -9,16 +9,19 @@ public class Leaf : MonoBehaviour
     public float growSpeed = 0.01f;
     public bool flip = false;
 
-    float currentScale = 1.0f;
-    
-    private void Awake()
+    public int spawnedAtStemLength = 0;
+
+    public void Spawn(int stemLength)
     {
-        currentScale = transform.localScale.x;
+        spawnedAtStemLength = stemLength;
     }
 
-    public void Grow()
+    public void Grow(int stemLength)
     {
-        currentScale = Mathf.Min(currentScale + growSpeed, maxScale);
+        int age = Mathf.Max(stemLength - spawnedAtStemLength, 0);
+
+        float currentScale = Mathf.Min(age * growSpeed, maxScale);
+
         transform.localScale = new Vector3(currentScale * (flip ? -1 : 1), currentScale, currentScale);
     }
 
