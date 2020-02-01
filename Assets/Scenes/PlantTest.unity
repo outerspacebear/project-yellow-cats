@@ -211,6 +211,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3581479555626016744, guid: 234941b57472c43c9a18075fe6bff501,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.019999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581479555626016744, guid: 234941b57472c43c9a18075fe6bff501,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.10400009
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581479556976133931, guid: 234941b57472c43c9a18075fe6bff501,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.019999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581479556976133931, guid: 234941b57472c43c9a18075fe6bff501,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.10400009
+      objectReference: {fileID: 0}
     - target: {fileID: 3581479557031877290, guid: 234941b57472c43c9a18075fe6bff501,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -270,6 +290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581479557031877295, guid: 234941b57472c43c9a18075fe6bff501,
+        type: 3}
+      propertyPath: segmentLength
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234941b57472c43c9a18075fe6bff501, type: 3}
