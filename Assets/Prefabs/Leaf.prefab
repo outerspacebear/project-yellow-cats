@@ -126,6 +126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxScale: 0.5
-  growSpeed: 0.005
+  growSpeed: 0.01
   flip: 0
   spawnedAtStemLength: 0

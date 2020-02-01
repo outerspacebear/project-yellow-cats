@@ -11,6 +11,9 @@ public class Plant : MonoBehaviour
     public ObjectAimer2D objectAimer2D;
 
     public Vector3 lastHeadPosition;
+    public float growthThreashold = 0.1f;   // threshold for preventing growing on tiny movements.
+                                            // E.g. when physics objects collide or
+                                            // plant hits the wall
 
     public Leaf leafPrefab;
     public List<Leaf> leaves = new List<Leaf>();
@@ -41,7 +44,7 @@ public class Plant : MonoBehaviour
         }
 
         Vector3 newHeadPosition = head.transform.position;
-        if (lastHeadPosition  != newHeadPosition)
+        if (Vector3.Distance(lastHeadPosition, newHeadPosition) > growthThreashold)
         {
             lastHeadPosition = newHeadPosition;
             stem.AddStemPosition(newHeadPosition);
