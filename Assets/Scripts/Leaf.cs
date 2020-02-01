@@ -6,7 +6,7 @@ public class Leaf : MonoBehaviour
 {
     public float maxScale = 1.0f;
 
-    public float growSpeed = 0.1f;
+    public float growSpeed = 0.01f;
     public bool flip = false;
 
     float currentScale = 1.0f;

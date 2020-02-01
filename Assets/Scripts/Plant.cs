@@ -17,6 +17,7 @@ public class Plant : MonoBehaviour
     public List<Leaf> leaves = new List<Leaf>();
     public int spawnLeafEverySegments = 10;
 
+    int lastStemCount = 0;
 
     void Start()
 	{
@@ -25,6 +26,7 @@ public class Plant : MonoBehaviour
         objectAimer2D = GetComponentInChildren<ObjectAimer2D>();
 
         lastHeadPosition = transform.position;
+        lastStemCount = stem.stemPositions.Count;
     }
 
 
@@ -52,12 +54,15 @@ public class Plant : MonoBehaviour
             leaf.transform.right = leafDirection;
 
             leaves.Add(leaf);
+        }
 
-            foreach (Leaf l in leaves)
+        if (stem.stemPositions.Count > lastStemCount)
+        {
+            foreach (var l in leaves)
             {
                 l.Grow();
             }
-
+            lastStemCount = stem.stemPositions.Count;
         }
     }
 }
