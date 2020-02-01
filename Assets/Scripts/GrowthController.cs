@@ -38,6 +38,11 @@ public class GrowthController : MonoBehaviour
         else if(Input.GetButtonUp("Grow"))
         {
             mRigidbody.drag = startDrag;
+            foreach(var rigidbody in GetComponentsInChildren<Rigidbody2D>())
+            {
+                rigidbody.velocity = Vector2.zero;
+                rigidbody.angularVelocity = 0f;
+            }
         }
 
         else if(Input.GetButton("Retract"))

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3295886757056302434}
   - component: {fileID: 3295886757056302461}
   - component: {fileID: 3295886757056302463}
+  - component: {fileID: 979402783}
   m_Layer: 5
   m_Name: PlantHead
   m_TagString: Untagged
@@ -47,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9568e054fd9956b4081db8d1f0496ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growthSpeed: 0.1
+  growthSpeed: 1.5
   extraDragTime: 2
   startDrag: 3
 --- !u!50 &3295886757056302461
@@ -87,6 +88,43 @@ MonoBehaviour:
   aimAtMouse: 1
   target: {fileID: 0}
   onlyWhenGrowing: 1
+--- !u!60 &979402783
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3295886757056302432}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.055236816, y: 0.020080566}
+      - {x: -0.0007324219, y: -0.048095703}
+      - {x: -0.057495117, y: 0.022155762}
+      - {x: -0.02545166, y: -0.02532959}
+      - {x: -0.0107421875, y: -0.112854004}
+      - {x: -0.058532715, y: -0.099365234}
+      - {x: -0.14367676, y: -0.057678223}
+      - {x: 0.0041503906, y: -0.13238525}
+      - {x: 0.14111328, y: -0.05871582}
+      - {x: 0.07495117, y: -0.09057617}
+      - {x: 0.012451172, y: -0.11352539}
+      - {x: 0.023986816, y: -0.023864746}
 --- !u!1 &3295886757351490058
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +295,7 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -1, y: -0.52}
   m_ConnectedAnchor: {x: 0.019958496, y: -0.104003906}
-  m_UseMotor: 1
+  m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 10
     m_MaximumMotorForce: 0.1
@@ -438,7 +476,7 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 1, y: -0.52}
   m_ConnectedAnchor: {x: -0.019958496, y: -0.104003906}
-  m_UseMotor: 1
+  m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 10
     m_MaximumMotorForce: 0.1
