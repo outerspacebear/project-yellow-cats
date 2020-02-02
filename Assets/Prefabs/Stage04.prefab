@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901587041131115417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.7, y: 17.76, z: 0}
+  m_LocalPosition: {x: -5.54, y: 17.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1984066396923825062}
@@ -326,7 +326,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 2.81, y: -0.58}
-  m_ConnectedAnchor: {x: -6.6089096, y: 1.9822108}
+  m_ConnectedAnchor: {x: -11.52891, y: 1.9822108}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 50
@@ -553,7 +553,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -1.69, y: 2.11}
-  m_ConnectedAnchor: {x: -6.6041956, y: 1.9971675}
+  m_ConnectedAnchor: {x: -11.524196, y: 1.9971675}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1039,6 +1039,7 @@ GameObject:
   - component: {fileID: 2997865995087784587}
   - component: {fileID: 1965106393688883193}
   - component: {fileID: 4233024805430818726}
+  - component: {fileID: 5468033082845665231}
   m_Layer: 9
   m_Name: SeedSpawner
   m_TagString: Untagged
@@ -1101,6 +1102,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPosition: {fileID: 5997767259205059136}
 --- !u!114 &4233024805430818726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3943189998010672303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdc18b2315ab41b3a25c3c7206baad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPosition: {fileID: 5997767259205059136}
+--- !u!114 &5468033082845665231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1208,7 +1222,7 @@ PrefabInstance:
     - target: {fileID: 6128857932908905348, guid: 717c5f14ba048344e8122ef0025b04d4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13
+      value: -13.49
       objectReference: {fileID: 0}
     - target: {fileID: 6128857932908905348, guid: 717c5f14ba048344e8122ef0025b04d4,
         type: 3}
