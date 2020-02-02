@@ -465,7 +465,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 17.308039, y: -4.860213, z: 0}
+    - position: {x: 16.210098, y: -5.3873796, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -474,7 +474,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 19.096167, y: -4.6090384, z: 0}
+    - position: {x: 19.337713, y: -5.3997893, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -483,7 +483,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 20.05068, y: -4.7558866, z: 0}
+    - position: {x: 20.380062, y: -5.2610884, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -492,7 +492,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 20.436157, y: -4.5906825, z: 0}
+    - position: {x: 20.677706, y: -5.16178, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -510,7 +510,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 23.37312, y: -5.086295, z: 0}
+    - position: {x: 23.395079, y: -4.976469, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -824,13 +824,12 @@ EdgeCollider2D:
   - {x: 9.558569, y: -6.630607}
   - {x: 11.045753, y: -6.8097587}
   - {x: 12.708277, y: -4.79244}
-  - {x: 14.52551, y: -4.902575}
-  - {x: 17.308016, y: -4.8600545}
-  - {x: 19.096191, y: -4.60888}
-  - {x: 20.055529, y: -4.7536354}
-  - {x: 20.444656, y: -4.5954556}
-  - {x: 21.096981, y: -4.975999}
-  - {x: 23.373096, y: -5.086137}
+  - {x: 14.525557, y: -4.9025817}
+  - {x: 16.210098, y: -5.3872194}
+  - {x: 19.337692, y: -5.3996305}
+  - {x: 20.410967, y: -5.250609}
+  - {x: 21.096973, y: -4.9759984}
+  - {x: 23.395063, y: -4.97631}
   - {x: 25.190392, y: -4.8107967}
   - {x: 27.7418, y: -5.2329926}
   - {x: 29.173662, y: -4.700663}
