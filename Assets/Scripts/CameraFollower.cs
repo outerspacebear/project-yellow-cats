@@ -20,7 +20,7 @@ public class CameraFollower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!followThis)
+        if(!followThis || followThis != PlantLocator.GetInstance().currentPlant.GetComponentInChildren<GrowthController>().gameObject.transform)
         {
             if (PlantLocator.GetInstance().currentPlant)
                 followThis = PlantLocator.GetInstance().currentPlant.GetComponentInChildren<GrowthController>().gameObject.transform;
