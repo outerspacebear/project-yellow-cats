@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class SeedGrower : MonoBehaviour
 {
     [SerializeField] Plant plant;
@@ -51,7 +52,7 @@ public class SeedGrower : MonoBehaviour
                 collider.enabled = false;
             }
             readyToSpawn = true;
-
+            GetComponent<AudioSource>().Play();
             GetComponentInParent<Animator>().SetBool("animateEnable", true);
         }
     }
