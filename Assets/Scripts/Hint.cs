@@ -83,6 +83,18 @@ public class Hint : MonoBehaviour
         tutorialLeftTime = tutorialLength;
     }
 
+    public void HideHints()
+    {
+        mouseIcon.SetActive(true);
+        lmb.SetActive(false);
+        rmb.SetActive(false);
+
+        animatedObjects.Clear();
+
+        tutorialLeftTime = 0.0f;
+        blinkLeftTime = 0.0f;
+    }
+
     public void Awake()
     {
         instance = this;

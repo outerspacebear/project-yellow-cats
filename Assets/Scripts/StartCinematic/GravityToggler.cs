@@ -21,6 +21,11 @@ public class GravityToggler : MonoBehaviour
     {
         if(Input.anyKeyDown)
         {
+            if (Hint.GetInstance())
+            {
+                Hint.GetInstance().HideHints();
+            }
+
             rigidbody.gravityScale = targetGravity;
             Destroy(this);
         }
