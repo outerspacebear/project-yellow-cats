@@ -49,6 +49,8 @@ public class SeedGrower : MonoBehaviour
             }
             seed = collision.gameObject;
             readyToSpawn = true;
+
+            GetComponentInParent<Animator>().SetBool("animateEnable", true);
         }
     }
 }

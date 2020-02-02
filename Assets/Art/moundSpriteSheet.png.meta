@@ -1,0 +1,2161 @@
+fileFormatVersion: 2
+guid: bc497777ae6760442a0daf05e753d381
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4442794745017382338
+    second: moundSpriteSheet_0
+  - first:
+      213: -9111805470610065485
+    second: moundSpriteSheet_1
+  - first:
+      213: -6497594359051029269
+    second: moundSpriteSheet_2
+  - first:
+      213: 1117105830705148776
+    second: moundSpriteSheet_3
+  - first:
+      213: 1094587715699936893
+    second: moundSpriteSheet_4
+  - first:
+      213: -1086288424529034917
+    second: moundSpriteSheet_5
+  - first:
+      213: -431325246187923573
+    second: moundSpriteSheet_6
+  - first:
+      213: 2956701338530859382
+    second: moundSpriteSheet_7
+  - first:
+      213: -8549815507831648856
+    second: moundSpriteSheet_8
+  - first:
+      213: 8530159735236224373
+    second: moundSpriteSheet_9
+  - first:
+      213: -784928114198933332
+    second: moundSpriteSheet_10
+  - first:
+      213: 4811931735557046540
+    second: moundSpriteSheet_11
+  - first:
+      213: 3634739888622962386
+    second: moundSpriteSheet_12
+  - first:
+      213: 4120720966941287754
+    second: moundSpriteSheet_13
+  - first:
+      213: -5971758368793572996
+    second: moundSpriteSheet_14
+  - first:
+      213: -9002997731502966003
+    second: moundSpriteSheet_15
+  - first:
+      213: 1479739736601233628
+    second: moundSpriteSheet_16
+  - first:
+      213: 8942951606501160307
+    second: moundSpriteSheet_17
+  - first:
+      213: 6066081701695885337
+    second: moundSpriteSheet_18
+  - first:
+      213: 7458141383764502958
+    second: moundSpriteSheet_19
+  - first:
+      213: -4173230887138028720
+    second: moundSpriteSheet_20
+  - first:
+      213: -2682962343184111578
+    second: moundSpriteSheet_21
+  - first:
+      213: -3302308048579373566
+    second: moundSpriteSheet_22
+  - first:
+      213: 6122880312120126921
+    second: moundSpriteSheet_23
+  - first:
+      213: -7726603478069842679
+    second: moundSpriteSheet_24
+  - first:
+      213: -6480957070194615034
+    second: moundSpriteSheet_25
+  - first:
+      213: -2016177752753060168
+    second: moundSpriteSheet_26
+  - first:
+      213: -7764953364009031049
+    second: moundSpriteSheet_27
+  - first:
+      213: 5065918350038122218
+    second: moundSpriteSheet_28
+  - first:
+      213: -142289686571378062
+    second: moundSpriteSheet_29
+  - first:
+      213: 2263881254328547975
+    second: moundSpriteSheet_30
+  - first:
+      213: 3239217386554568537
+    second: moundSpriteSheet_31
+  - first:
+      213: 1315778109908174614
+    second: moundSpriteSheet_32
+  - first:
+      213: 1616711658977502251
+    second: moundSpriteSheet_33
+  - first:
+      213: -3249038317838289570
+    second: moundSpriteSheet_34
+  - first:
+      213: -949536397105289261
+    second: moundSpriteSheet_35
+  - first:
+      213: 5299655320511560164
+    second: moundSpriteSheet_36
+  - first:
+      213: 1406461828839504966
+    second: moundSpriteSheet_37
+  - first:
+      213: -460622736192291004
+    second: moundSpriteSheet_38
+  - first:
+      213: 1480105263607624387
+    second: moundSpriteSheet_39
+  - first:
+      213: 4235560832987572265
+    second: moundSpriteSheet_40
+  - first:
+      213: 2304171297709986252
+    second: moundSpriteSheet_41
+  - first:
+      213: 5954385472537173400
+    second: moundSpriteSheet_42
+  - first:
+      213: -3724315765035430170
+    second: moundSpriteSheet_43
+  - first:
+      213: 516481246793031100
+    second: moundSpriteSheet_44
+  - first:
+      213: 8024602258578882815
+    second: moundSpriteSheet_45
+  - first:
+      213: -9003841720106798140
+    second: moundSpriteSheet_46
+  - first:
+      213: 475584032895271841
+    second: moundSpriteSheet_47
+  - first:
+      213: 5743590897503889172
+    second: moundSpriteSheet_48
+  - first:
+      213: 3314112536568641699
+    second: moundSpriteSheet_49
+  - first:
+      213: -8731498069359520271
+    second: moundSpriteSheet_50
+  - first:
+      213: 4921792147338278491
+    second: moundSpriteSheet_51
+  - first:
+      213: -6071605982438595723
+    second: moundSpriteSheet_52
+  - first:
+      213: -5602853088660733393
+    second: moundSpriteSheet_53
+  - first:
+      213: 2487843747000396192
+    second: moundSpriteSheet_54
+  - first:
+      213: 6403274050423423193
+    second: moundSpriteSheet_55
+  - first:
+      213: 829332591124845581
+    second: moundSpriteSheet_56
+  - first:
+      213: 5545076296233464322
+    second: moundSpriteSheet_57
+  - first:
+      213: 6162840646119084411
+    second: moundSpriteSheet_58
+  - first:
+      213: -5233990438677519432
+    second: moundSpriteSheet_59
+  - first:
+      213: 6504803995809923690
+    second: moundSpriteSheet_60
+  - first:
+      213: 4029274257920252765
+    second: moundSpriteSheet_61
+  - first:
+      213: -1224886847026382798
+    second: moundSpriteSheet_62
+  - first:
+      213: -5142124944156748092
+    second: moundSpriteSheet_63
+  - first:
+      213: -8671069132300060918
+    second: moundSpriteSheet_64
+  - first:
+      213: -7203777612380521330
+    second: moundSpriteSheet_65
+  - first:
+      213: -5670393155791418677
+    second: moundSpriteSheet_66
+  - first:
+      213: -5215462334163206108
+    second: moundSpriteSheet_67
+  - first:
+      213: 7991998650640077800
+    second: moundSpriteSheet_68
+  - first:
+      213: -6350164249480771637
+    second: moundSpriteSheet_69
+  - first:
+      213: 4536194436782422455
+    second: moundSpriteSheet_70
+  - first:
+      213: 4168678563465619892
+    second: moundSpriteSheet_71
+  - first:
+      213: -5628293562439771546
+    second: moundSpriteSheet_72
+  - first:
+      213: 2907505200314158227
+    second: moundSpriteSheet_73
+  - first:
+      213: -4976727077962923875
+    second: moundSpriteSheet_74
+  - first:
+      213: 7501312203746412923
+    second: moundSpriteSheet_75
+  - first:
+      213: 5052125228081384419
+    second: moundSpriteSheet_76
+  - first:
+      213: 4078899281818551579
+    second: moundSpriteSheet_77
+  - first:
+      213: -5239962562156494804
+    second: moundSpriteSheet_78
+  - first:
+      213: 6457714001083934887
+    second: moundSpriteSheet_79
+  - first:
+      213: 4735623675504525411
+    second: moundSpriteSheet_80
+  - first:
+      213: -2445345027402729468
+    second: moundSpriteSheet_81
+  - first:
+      213: -8729732650026622925
+    second: moundSpriteSheet_82
+  - first:
+      213: 239811679374544097
+    second: moundSpriteSheet_83
+  - first:
+      213: 1719690892405432709
+    second: moundSpriteSheet_84
+  - first:
+      213: 546267710785854536
+    second: moundSpriteSheet_85
+  - first:
+      213: -7922727686996289047
+    second: moundSpriteSheet_86
+  - first:
+      213: 5614403563245648264
+    second: moundSpriteSheet_87
+  - first:
+      213: -2746893284994500563
+    second: moundSpriteSheet_88
+  - first:
+      213: 7099747756575984529
+    second: moundSpriteSheet_89
+  - first:
+      213: 6508526359354908015
+    second: moundSpriteSheet_90
+  - first:
+      213: -8316016560486807212
+    second: moundSpriteSheet_91
+  - first:
+      213: 1386801203274217697
+    second: moundSpriteSheet_92
+  - first:
+      213: 2524438049678579321
+    second: moundSpriteSheet_93
+  - first:
+      213: 1371096705858215885
+    second: moundSpriteSheet_94
+  - first:
+      213: 5185975661290666182
+    second: moundSpriteSheet_95
+  - first:
+      213: -630186733910798245
+    second: moundSpriteSheet_96
+  - first:
+      213: 5316143226726270007
+    second: moundSpriteSheet_97
+  - first:
+      213: 4852963562494087010
+    second: moundSpriteSheet_98
+  - first:
+      213: 3555373402515261533
+    second: moundSpriteSheet_99
+  - first:
+      213: 7653661228358095118
+    second: moundSpriteSheet_100
+  - first:
+      213: 6508890475312751400
+    second: moundSpriteSheet_101
+  - first:
+      213: -4306162980828524270
+    second: moundSpriteSheet_102
+  - first:
+      213: -2955871058075384284
+    second: moundSpriteSheet_103
+  - first:
+      213: -3164819029617566243
+    second: moundSpriteSheet_104
+  - first:
+      213: -2373006712234912800
+    second: moundSpriteSheet_105
+  - first:
+      213: -5111163310750520669
+    second: moundSpriteSheet_106
+  - first:
+      213: 941989060335160802
+    second: moundSpriteSheet_107
+  - first:
+      213: 3518480795067224781
+    second: moundSpriteSheet_108
+  - first:
+      213: -6673367388743432509
+    second: moundSpriteSheet_109
+  - first:
+      213: 3335231657291965997
+    second: moundSpriteSheet_110
+  - first:
+      213: -3727542629676222317
+    second: moundSpriteSheet_111
+  - first:
+      213: 8838360597216303191
+    second: moundSpriteSheet_112
+  - first:
+      213: -380586924913526126
+    second: moundSpriteSheet_113
+  - first:
+      213: 4048726312110725118
+    second: moundSpriteSheet_114
+  - first:
+      213: 3441501514621218946
+    second: moundSpriteSheet_115
+  - first:
+      213: 2105327388753312945
+    second: moundSpriteSheet_116
+  - first:
+      213: 127857330052447627
+    second: moundSpriteSheet_117
+  - first:
+      213: -3028190796113843830
+    second: moundSpriteSheet_118
+  - first:
+      213: 2491012200014199866
+    second: moundSpriteSheet_119
+  - first:
+      213: -7045852540515015036
+    second: moundSpriteSheet_120
+  - first:
+      213: 1382156802045966334
+    second: moundSpriteSheet_121
+  - first:
+      213: 3983143555454599187
+    second: moundSpriteSheet_122
+  - first:
+      213: 8314171059668769069
+    second: moundSpriteSheet_123
+  - first:
+      213: 2732803432785266615
+    second: moundSpriteSheet_124
+  - first:
+      213: 7826971863340733780
+    second: moundSpriteSheet_125
+  - first:
+      213: -2003549877314660624
+    second: moundSpriteSheet_126
+  - first:
+      213: 6362778165837740000
+    second: moundSpriteSheet_127
+  - first:
+      213: 4926096931189666420
+    second: moundSpriteSheet_128
+  - first:
+      213: 7197719397177093869
+    second: moundSpriteSheet_129
+  - first:
+      213: 6636123869043944054
+    second: moundSpriteSheet_130
+  - first:
+      213: 9211101766048247090
+    second: moundSpriteSheet_131
+  - first:
+      213: -6332685454758194111
+    second: moundSpriteSheet_132
+  - first:
+      213: 5383312284780119856
+    second: moundSpriteSheet_133
+  - first:
+      213: 8352816931618140965
+    second: moundSpriteSheet_134
+  - first:
+      213: 8298147399244445644
+    second: moundSpriteSheet_135
+  - first:
+      213: -7945701421050061402
+    second: moundSpriteSheet_136
+  - first:
+      213: -8687885635108260225
+    second: moundSpriteSheet_137
+  - first:
+      213: 2758394344524733883
+    second: moundSpriteSheet_138
+  - first:
+      213: 4914482705478128706
+    second: moundSpriteSheet_139
+  - first:
+      213: -4020703726712690487
+    second: moundSpriteSheet_140
+  - first:
+      213: 3892923305227624807
+    second: moundSpriteSheet_141
+  - first:
+      213: 5208546175894707296
+    second: moundSpriteSheet_142
+  - first:
+      213: -7232600468427113203
+    second: moundSpriteSheet_143
+  - first:
+      213: 4495116121354088665
+    second: moundSpriteSheet_144
+  - first:
+      213: -3582536919431847043
+    second: moundSpriteSheet_145
+  - first:
+      213: 5722252794013781664
+    second: moundSpriteSheet_146
+  - first:
+      213: -9107622623695870745
+    second: moundSpriteSheet_147
+  - first:
+      213: -8840797548846132017
+    second: moundSpriteSheet_148
+  - first:
+      213: -740908361171190036
+    second: moundSpriteSheet_149
+  - first:
+      213: 4441485948401225663
+    second: moundSpriteSheet_150
+  - first:
+      213: 8771601502628610963
+    second: moundSpriteSheet_151
+  - first:
+      213: 7573399998998557469
+    second: moundSpriteSheet_152
+  - first:
+      213: 2442696869133572544
+    second: moundSpriteSheet_153
+  - first:
+      213: 2009786315690361933
+    second: moundSpriteSheet_154
+  - first:
+      213: 6604841549435955315
+    second: moundSpriteSheet_155
+  - first:
+      213: -892301390956898686
+    second: moundSpriteSheet_156
+  - first:
+      213: 2317942004782443986
+    second: moundSpriteSheet_157
+  - first:
+      213: -4727545918995333745
+    second: moundSpriteSheet_158
+  - first:
+      213: 8268741263461770591
+    second: moundSpriteSheet_159
+  - first:
+      213: -8094607844250495696
+    second: moundSpriteSheet_160
+  - first:
+      213: -5763497038590333289
+    second: moundSpriteSheet_161
+  - first:
+      213: 5017305791089258707
+    second: moundSpriteSheet_162
+  - first:
+      213: 489433152256607321
+    second: moundSpriteSheet_163
+  - first:
+      213: -5887782088275244286
+    second: moundSpriteSheet_164
+  - first:
+      213: -3316222008853214957
+    second: moundSpriteSheet_165
+  - first:
+      213: 6471268264250675582
+    second: moundSpriteSheet_166
+  - first:
+      213: 3680889796543403506
+    second: moundSpriteSheet_167
+  - first:
+      213: 5598842511059755477
+    second: moundSpriteSheet_168
+  - first:
+      213: 5747304701086673408
+    second: moundSpriteSheet_169
+  - first:
+      213: -100219778735964878
+    second: moundSpriteSheet_170
+  - first:
+      213: -5661610290585611580
+    second: moundSpriteSheet_171
+  - first:
+      213: -2959133339282345418
+    second: moundSpriteSheet_172
+  - first:
+      213: -8518703446449726721
+    second: moundSpriteSheet_173
+  - first:
+      213: 1099800308770015392
+    second: moundSpriteSheet_174
+  - first:
+      213: 570397453402960254
+    second: moundSpriteSheet_175
+  - first:
+      213: -448971055452157497
+    second: moundSpriteSheet_176
+  - first:
+      213: -7509309164706365530
+    second: moundSpriteSheet_177
+  - first:
+      213: -854422463427489977
+    second: moundSpriteSheet_178
+  - first:
+      213: -7744510882796097428
+    second: moundSpriteSheet_179
+  - first:
+      213: -6066220868777693072
+    second: moundSpriteSheet_180
+  - first:
+      213: -7145288654555216783
+    second: moundSpriteSheet_181
+  - first:
+      213: -6580203799812995966
+    second: moundSpriteSheet_182
+  - first:
+      213: 1042812444560135728
+    second: moundSpriteSheet_183
+  - first:
+      213: 5678538626744323861
+    second: moundSpriteSheet_184
+  - first:
+      213: -6390739308428544353
+    second: moundSpriteSheet_185
+  - first:
+      213: 6235160519662067976
+    second: moundSpriteSheet_186
+  - first:
+      213: -2069911745721061505
+    second: moundSpriteSheet_187
+  - first:
+      213: -6233383815778388337
+    second: moundSpriteSheet_188
+  - first:
+      213: -7933639478532974628
+    second: moundSpriteSheet_189
+  - first:
+      213: -8145023849237868865
+    second: moundSpriteSheet_190
+  - first:
+      213: -1001389512373108781
+    second: moundSpriteSheet_191
+  - first:
+      213: -1936912323129763756
+    second: moundSpriteSheet_192
+  - first:
+      213: -4579286536043955794
+    second: moundSpriteSheet_193
+  - first:
+      213: 7689694596638846134
+    second: moundSpriteSheet_194
+  - first:
+      213: -7191399736359224987
+    second: moundSpriteSheet_195
+  - first:
+      213: -6538981657285402679
+    second: moundSpriteSheet_196
+  - first:
+      213: 3191559885438285507
+    second: moundSpriteSheet_197
+  - first:
+      213: -4374209918408288535
+    second: moundSpriteSheet_198
+  - first:
+      213: 2652030227784847785
+    second: moundSpriteSheet_199
+  - first:
+      213: -2878898141061889850
+    second: moundSpriteSheet_200
+  - first:
+      213: -8779095794246241487
+    second: moundSpriteSheet_201
+  - first:
+      213: 8337056693829726123
+    second: moundSpriteSheet_202
+  - first:
+      213: -129131569606620935
+    second: moundSpriteSheet_203
+  - first:
+      213: 4237368953839853522
+    second: moundSpriteSheet_204
+  - first:
+      213: 8233882609582478749
+    second: moundSpriteSheet_205
+  - first:
+      213: -6722769022155663906
+    second: moundSpriteSheet_206
+  - first:
+      213: -6480388210355199236
+    second: moundSpriteSheet_207
+  - first:
+      213: 1108819622667097293
+    second: moundSpriteSheet_208
+  - first:
+      213: 1103132222015037763
+    second: moundSpriteSheet_209
+  - first:
+      213: 2947515580626790066
+    second: moundSpriteSheet_210
+  - first:
+      213: 2777062082631825280
+    second: moundSpriteSheet_211
+  - first:
+      213: 7561763745797050272
+    second: moundSpriteSheet_212
+  - first:
+      213: -7498535471019427509
+    second: moundSpriteSheet_213
+  - first:
+      213: 1167112044842103487
+    second: moundSpriteSheet_214
+  - first:
+      213: -4094603856859621333
+    second: moundSpriteSheet_215
+  - first:
+      213: -3789813645989091768
+    second: moundSpriteSheet_216
+  - first:
+      213: 8644084001015970484
+    second: moundSpriteSheet_217
+  - first:
+      213: -8346974822819549099
+    second: moundSpriteSheet_218
+  - first:
+      213: -173373994152581133
+    second: moundSpriteSheet_219
+  - first:
+      213: -2686214854495295292
+    second: moundSpriteSheet_220
+  - first:
+      213: -8933928079038021164
+    second: moundSpriteSheet_221
+  - first:
+      213: -3302894586798555447
+    second: moundSpriteSheet_222
+  - first:
+      213: 3970767985148179159
+    second: moundSpriteSheet_223
+  - first:
+      213: -7154923393929264360
+    second: moundSpriteSheet_224
+  - first:
+      213: -261101711185817641
+    second: moundSpriteSheet_225
+  - first:
+      213: 3198005654355374899
+    second: moundSpriteSheet_226
+  - first:
+      213: 9177177907483392537
+    second: moundSpriteSheet_227
+  - first:
+      213: 2776708616337514884
+    second: moundSpriteSheet_228
+  - first:
+      213: 3727332902900815394
+    second: moundSpriteSheet_229
+  - first:
+      213: -7827293206811793872
+    second: moundSpriteSheet_230
+  - first:
+      213: -8970901318923909464
+    second: moundSpriteSheet_231
+  - first:
+      213: 3988206186819041505
+    second: moundSpriteSheet_232
+  - first:
+      213: -4645165479750047536
+    second: moundSpriteSheet_233
+  - first:
+      213: 1320301683255570718
+    second: moundSpriteSheet_234
+  - first:
+      213: -1052189102258336433
+    second: moundSpriteSheet_235
+  - first:
+      213: 5457750047348378584
+    second: moundSpriteSheet_236
+  - first:
+      213: -5318840133999655435
+    second: moundSpriteSheet_237
+  - first:
+      213: -1526700264588651678
+    second: moundSpriteSheet_238
+  - first:
+      213: -2895210115725102664
+    second: moundSpriteSheet_239
+  - first:
+      213: 5749189601242782650
+    second: moundSpriteSheet_240
+  - first:
+      213: -3792791745848662038
+    second: moundSpriteSheet_241
+  - first:
+      213: -6830521215620844745
+    second: moundSpriteSheet_242
+  - first:
+      213: 5483626156914360949
+    second: moundSpriteSheet_243
+  - first:
+      213: 7618878951217556237
+    second: moundSpriteSheet_244
+  - first:
+      213: 8563011125857723268
+    second: moundSpriteSheet_245
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: moundSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4897
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a4445e7b50852c0800000000000000
+      internalID: -4442794745017382338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4814
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b773dd633d5c8180800000000000000
+      internalID: -9111805470610065485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4731
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be47e2e2b58e3d5a0800000000000000
+      internalID: -6497594359051029269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4648
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863b2b795d1c08f00800000000000000
+      internalID: 1117105830705148776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4565
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e0dc16ab1c03f00800000000000000
+      internalID: 1094587715699936893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4482
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51045cee6abce0f0800000000000000
+      internalID: -1086288424529034917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4399
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b879f4e49ff930af0800000000000000
+      internalID: -431325246187923573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4316
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679cd0eb330580920800000000000000
+      internalID: 2956701338530859382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4233
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad81903814f85980800000000000000
+      internalID: -8549815507831648856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4150
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5756810a517316670800000000000000
+      internalID: 8530159735236224373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4067
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca094f2f9006b15f0800000000000000
+      internalID: -784928114198933332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3984
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c018e453b6a67c240800000000000000
+      internalID: 4811931735557046540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3901
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d68058cba0317230800000000000000
+      internalID: 3634739888622962386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3818
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a452a0d03edbf2930800000000000000
+      internalID: 4120720966941287754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3735
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79c79f376d002da0800000000000000
+      internalID: -5971758368793572996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3652
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b3e1c534dee0380800000000000000
+      internalID: -9002997731502966003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3569
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd885205377198410800000000000000
+      internalID: 1479739736601233628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3486
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375b205ba1fbb1c70800000000000000
+      internalID: 8942951606501160307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3403
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91094101b2d0f2450800000000000000
+      internalID: 6066081701695885337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3320
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea96ce7d214a08760800000000000000
+      internalID: 7458141383764502958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3237
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053137e6e94b516c0800000000000000
+      internalID: -4173230887138028720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3154
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628e2ccb6f334cad0800000000000000
+      internalID: -2682962343184111578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3071
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20653818358db22d0800000000000000
+      internalID: -3302308048579373566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2988
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd27261437d8f450800000000000000
+      internalID: 6122880312120126921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2905
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d6951f21795c490800000000000000
+      internalID: -7726603478069842679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2822
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d5e7ad1e30f06a0800000000000000
+      internalID: -6480957070194615034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2739
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6cb1b14091504e0800000000000000
+      internalID: -2016177752753060168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2656
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a64c05e085d3490800000000000000
+      internalID: -7764953364009031049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2573
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeeb72326e1cd4640800000000000000
+      internalID: 5065918350038122218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2490
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a16b0b84c760ef0800000000000000
+      internalID: -142289686571378062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2407
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a3be9910cea6f10800000000000000
+      internalID: 2263881254328547975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2324
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95faadb0d0304fc20800000000000000
+      internalID: 3239217386554568537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2241
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617cf4c3835924210800000000000000
+      internalID: 1315778109908174614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2158
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24269920b6bf6610800000000000000
+      internalID: 1616711658977502251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2075
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55bd933dd819e2d0800000000000000
+      internalID: -3249038317838289570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1992
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d72c3d7da192d2f0800000000000000
+      internalID: -949536397105289261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1909
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9b91b6f682c8940800000000000000
+      internalID: 5299655320511560164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1826
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cff12e491c48310800000000000000
+      internalID: 1406461828839504966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1743
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f3ac9df0a8b99f0800000000000000
+      internalID: -460622736192291004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1660
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2b48335e36a8410800000000000000
+      internalID: 1480105263607624387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1577
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92828caf22cb7ca30800000000000000
+      internalID: 4235560832987572265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1494
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc197a5569f0aff10800000000000000
+      internalID: 2304171297709986252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1411
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d13522a0a32a250800000000000000
+      internalID: 5954385472537173400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1328
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee0da14b82905cc0800000000000000
+      internalID: -3724315765035430170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1245
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbddf3025f8ea2700800000000000000
+      internalID: 516481246793031100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1162
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0446eec3d1d5f60800000000000000
+      internalID: 8024602258578882815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1079
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c33133f8adeb0380800000000000000
+      internalID: -9003841720106798140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 996
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3029d782d999600800000000000000
+      internalID: 475584032895271841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 913
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417e2ec8d7555bf40800000000000000
+      internalID: 5743590897503889172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 830
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8b7d70bc71efd20800000000000000
+      internalID: 3314112536568641699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 747
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f511d274cc73d680800000000000000
+      internalID: -8731498069359520271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 664
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56b76891e7bd4440800000000000000
+      internalID: 4921792147338278491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 581
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5736c9817825dbba0800000000000000
+      internalID: -6071605982438595723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 498
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f224da11dcaae32b0800000000000000
+      internalID: -5602853088660733393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9a2ace4b8968220800000000000000
+      internalID: 2487843747000396192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 332
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d007f6a2dffcd850800000000000000
+      internalID: 6403274050423423193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 249
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0496aef891628b00800000000000000
+      internalID: 829332591124845581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 166
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2023f69238114fc40800000000000000
+      internalID: 5545076296233464322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71544f5aeec68550800000000000000
+      internalID: 6162840646119084411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moundSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 450
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3e5d84d612d57b0800000000000000
+      internalID: -5233990438677519432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
