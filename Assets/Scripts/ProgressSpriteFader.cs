@@ -25,10 +25,10 @@ public class ProgressSpriteFader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SeedCounter.seedsPlanted > seedCount)
+        if(SeedCounter.GetSeedsPlanted() > seedCount)
         {
             isFading = true;
-            seedCount = SeedCounter.seedsPlanted;
+            seedCount = SeedCounter.GetSeedsPlanted();
             //sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, startAlpha - step * seedCount);
             currentTarget = startAlpha - step * seedCount;
         }

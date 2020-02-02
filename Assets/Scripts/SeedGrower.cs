@@ -29,7 +29,7 @@ public class SeedGrower : MonoBehaviour
                 var plantGuy = Instantiate(plant, new Vector3(seed.transform.position.x, seed.transform.position.y, seed.transform.position.z), transform.rotation) as Plant;
                 plantGuy.GetComponentInChildren<Rigidbody2D>().AddForce(transform.up * spawnForce);
                 PlantLocator.GetInstance().SwitchToPlant(plantGuy);
-                SeedCounter.seedsPlanted++;
+                SeedCounter.IncrementSeedsPlanted();
                 Destroy(seed);
                 //foreach (var collider in moundColliders)
                 //{
