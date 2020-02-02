@@ -10,6 +10,7 @@ public class CameraZoomer : MonoBehaviour
     [SerializeField] float moveRate;
     [SerializeField] float zoomRate;
     [SerializeField] float threshold = 0.02f;
+    [SerializeField] MonoBehaviour enableWhenDying;
     private Camera camera;
     private bool shouldZoom = false;
     // Start is called before the first frame update
@@ -35,6 +36,8 @@ public class CameraZoomer : MonoBehaviour
             {
                 transform.position = targetPosition;
                 camera.orthographicSize = targetSize;
+                if (enableWhenDying)
+                    enableWhenDying.enabled = true;
                 Destroy(this);
             }
         }
