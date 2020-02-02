@@ -48,7 +48,13 @@ public class Plant : MonoBehaviour
                 objectAimer2D.Aim();
         }
         else
+        {
+            if (Hint.GetInstance())
+            {
+                Hint.GetInstance().ShowRightButton();
+            }
             growthController.FinishGrowing();
+        }
     }
 
     public void FinishGrowing()

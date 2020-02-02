@@ -11,6 +11,11 @@ public class GravityToggler : MonoBehaviour
     void Start()
     {
         rigidbody.gravityScale = startGravity;
+
+        if (Hint.GetInstance())
+        {
+            Hint.GetInstance().ShowAnyButton();
+        }
     }
 
     // Update is called once per frame

@@ -43,6 +43,11 @@ public class PlantLocator : MonoBehaviour
             {
                 growthRemaining = 0.0f;
                 currentPlant.FinishGrowing();
+
+                if (Hint.GetInstance())
+                {
+                    Hint.GetInstance().ShowLeftButton();
+                }
             }
         }
         else
