@@ -14,7 +14,7 @@ public class GrowthController : MonoBehaviour
     private float dragReductionPerSecond;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         mRigidbody = GetComponent<Rigidbody2D>();
         targetDrag = mRigidbody.drag;

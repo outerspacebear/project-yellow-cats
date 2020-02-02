@@ -22,8 +22,8 @@ public class CameraFollower : MonoBehaviour
     {
         if(!followThis)
         {
-            if (PlantLocator.currentPlant)
-                followThis = PlantLocator.currentPlant.GetComponentInChildren<GrowthController>().gameObject.transform;
+            if (PlantLocator.GetInstance().currentPlant)
+                followThis = PlantLocator.GetInstance().currentPlant.GetComponentInChildren<GrowthController>().gameObject.transform;
         }
 
         if(followThis)

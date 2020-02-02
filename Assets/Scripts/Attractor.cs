@@ -17,7 +17,7 @@ public class Attractor : MonoBehaviour
     void Start()
     {
         spring = GetComponent<SpringJoint2D>();
-        targetObject = PlantLocator.currentPlant;
+        targetObject = PlantLocator.GetInstance().currentPlant;
     }
 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class Attractor : MonoBehaviour
             readyForAttraction = true;
             if(targetObject == null)
             {
-                targetObject = PlantLocator.currentPlant;
+                targetObject = PlantLocator.GetInstance().currentPlant;
             }
         }
         else if(collision.gameObject.CompareTag(triggerObjectTag) && readyForAttraction && Vector2.Angle(targetObject.transform.up, Vector2.up) >= attractionStopAngle)

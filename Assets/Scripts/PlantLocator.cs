@@ -4,21 +4,57 @@ using UnityEngine;
 
 public class PlantLocator : MonoBehaviour
 {
-    [SerializeField] public static Plant currentPlant = null;
+    [SerializeField] public Plant currentPlant = null;
 
+    public float autoGrowthLength = 2.0f;
+    public float growthRemaining = 0.0f;
+
+
+    static PlantLocator instance;
+
+    public static PlantLocator GetInstance()
+    {
+        return instance;
+    }
+
+    public void SwitchToPlant(Plant nextPlant)
+    {
+        growthRemaining = autoGrowthLength;
+        currentPlant = nextPlant;
+        currentPlant.StartGrowing();
+    }
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Update()
     {
         if (currentPlant == null)
             return;
 
-        if (Input.GetButtonDown("Grow"))
-            currentPlant.StartGrowing();
-        else if (Input.GetButton("Grow"))
-            currentPlant.Grow();
-        else if (Input.GetButtonUp("Grow"))
-            currentPlant.FinishGrowing();
-        else if (Input.GetButton("Retract"))
-            currentPlant.Retract();
+        if (growthRemaining > 0.0f)
+        {
+            growthRemaining -= Time.deltaTime;
+            if (growthRemaining > 0.0f)
+                currentPlant.Grow();
+            else
+            {
+                growthRemaining = 0.0f;
+                currentPlant.FinishGrowing();
+            }
+        }
+        else
+        {
+            if (Input.GetButtonDown("Grow"))
+                currentPlant.StartGrowing();
+            else if (Input.GetButton("Grow"))
+                currentPlant.Grow();
+            else if (Input.GetButtonUp("Grow"))
+                currentPlant.FinishGrowing();
+            else if (Input.GetButton("Retract"))
+                currentPlant.Retract();
+        }
     }
 }

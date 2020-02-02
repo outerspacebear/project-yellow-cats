@@ -21,7 +21,7 @@ public class Plant : MonoBehaviour
     public List<Leaf> leaves = new List<Leaf>();
     public int spawnLeafEverySegments = 10;
 
-    void Start()
+    void Awake()
 	{
         stem = GetComponent<Stem>();
         growthController = GetComponentInChildren<GrowthController>();
@@ -49,8 +49,7 @@ public class Plant : MonoBehaviour
 
     public void FinishGrowing()
     {
-        if (stem.Length() < maxLength)
-            growthController.FinishGrowing();
+        growthController.FinishGrowing();
     }
 
     public void Retract()
