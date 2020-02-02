@@ -12,6 +12,8 @@ public class SeedGrower : MonoBehaviour
     private bool readyToSpawn = false;
     private GameObject seed = null;
     [SerializeField] Collider2D[] moundColliders;
+    [SerializeField] bool endGame = false;
+    [SerializeField] GameObject animation;
 
     // Start is called before the first frame update
     void Start()
@@ -27,9 +29,18 @@ public class SeedGrower : MonoBehaviour
             if(timeSinceSeedCollision >= spawnDelay)
             {
                 readyToSpawn = false;
+
                 var plantGuy = Instantiate(plant, new Vector3(seed.transform.position.x, seed.transform.position.y, seed.transform.position.z), transform.rotation) as Plant;
                 plantGuy.GetComponentInChildren<Rigidbody2D>().AddForce(transform.up * spawnForce);
                 PlantLocator.GetInstance().SwitchToPlant(plantGuy);
+                if (endGame)
+                {
+                    foreach(var sprite in plantGuy.GetComponentsInChildren<SpriteRenderer>())
+                    {
+                        sprite.enabled = false;
+                    }
+                    animation.GetComponent<Animator>().SetBool("play", true);
+                }
                 SeedCounter.IncrementSeedsPlanted();
                 Destroy(seed);
                 //foreach (var collider in moundColliders)

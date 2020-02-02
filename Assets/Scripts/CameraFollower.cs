@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFollower : MonoBehaviour
 {
-    [SerializeField] Transform followThis = null;
+    [SerializeField] public Transform followThis = null;
     [SerializeField] float leftMostPercentage = 0.05f;
     [SerializeField] float rightMostPercentage = 0.3f;
     [SerializeField] float followOffsetPercentage = -0.3f;
