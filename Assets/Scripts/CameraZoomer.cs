@@ -10,7 +10,8 @@ public class CameraZoomer : MonoBehaviour
     [SerializeField] float moveRate;
     [SerializeField] float zoomRate;
     [SerializeField] float threshold = 0.02f;
-    [SerializeField] MonoBehaviour enableWhenDying;
+    [SerializeField] MonoBehaviour[] enableWhenDying;
+    [SerializeField] Collider2D enableColliderWhenDying;
     private Camera camera;
     private bool shouldZoom = false;
     // Start is called before the first frame update
@@ -36,8 +37,13 @@ public class CameraZoomer : MonoBehaviour
             {
                 transform.position = targetPosition;
                 camera.orthographicSize = targetSize;
-                if (enableWhenDying)
-                    enableWhenDying.enabled = true;
+                if (enableWhenDying.Length != 0)
+                {
+                    foreach (var script in enableWhenDying)
+                        script.enabled = true;
+                }
+                if (enableColliderWhenDying)
+                    enableColliderWhenDying.enabled = true;
                 Destroy(this);
             }
         }

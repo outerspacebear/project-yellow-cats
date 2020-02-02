@@ -9,6 +9,8 @@ public class CameraFollower : MonoBehaviour
     [SerializeField] float rightMostPercentage = 0.3f;
     [SerializeField] float followOffsetPercentage = -0.3f;
     [SerializeField] float movePerFrame = 0.5f;
+    [SerializeField] float minXPos;
+    [SerializeField] float maxXPos;
 
     // Start is called before the first frame update
     void Start()
@@ -26,14 +28,15 @@ public class CameraFollower : MonoBehaviour
 
         if(followThis)
         {
-            //if(Camera.main.WorldToScreenPoint(followThis.position).x <= leftEdge)
-            if(Camera.main.WorldToViewportPoint(followThis.position).x <= leftMostPercentage)  
+            if(Camera.main.WorldToViewportPoint(followThis.position).x >= rightMostPercentage || Camera.main.WorldToViewportPoint(followThis.position).x <= leftMostPercentage)
             {
-                transform.position = new Vector3(Mathf.Lerp(transform.position.x, followThis.position.x, movePerFrame), transform.position.y, transform.position.z);
-            }
-            else if(Camera.main.WorldToViewportPoint(followThis.position).x >= rightMostPercentage)
-            {
-                transform.position = new Vector3(Mathf.Lerp(transform.position.x, followThis.position.x, movePerFrame), transform.position.y, transform.position.z);
+                if (transform.position.x > followThis.position.x && transform.position.x <= minXPos)
+                    return;
+                else if (transform.position.x < followThis.position.x && transform.position.x >= maxXPos)
+                    return;
+
+                float newX = Mathf.Lerp(transform.position.x, followThis.position.x, movePerFrame);
+                transform.position = new Vector3(newX, transform.position.y, transform.position.z);
             }
         }
     }
