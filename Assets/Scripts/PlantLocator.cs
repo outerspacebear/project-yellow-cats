@@ -19,6 +19,16 @@ public class PlantLocator : MonoBehaviour
 
     public void SwitchToPlant(Plant nextPlant)
     {
+        if (currentPlant)
+        {
+            var rigidbody = currentPlant.GetComponentInChildren<Rigidbody2D>();
+            rigidbody.velocity = Vector3.zero;
+            rigidbody.simulated = false;
+
+            var collider = currentPlant.GetComponentInChildren<Collider2D>();
+            collider.enabled = false;
+        }
+
         growthRemaining = autoGrowthLength;
         currentPlant = nextPlant;
         currentPlant.StartGrowing();
