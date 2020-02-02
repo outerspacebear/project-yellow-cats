@@ -19,6 +19,7 @@ public class Hint : MonoBehaviour
 
     public bool lmbShownAlready = false;
     public bool rmbShownAlready = false;
+    public bool anyButtonShownAlready = false;
 
     static Hint instance;
 
@@ -29,10 +30,16 @@ public class Hint : MonoBehaviour
 
     public void ShowAnyButton()
     {
+        if (anyButtonShownAlready)
+            return;
+
+        anyButtonShownAlready = true;
+
         mouseIcon.SetActive(true);
         lmb.SetActive(false);
         rmb.SetActive(false);
 
+        animatedObjects.Clear();
         animatedObjects.Add(lmb);
         animatedObjects.Add(rmb);
 
@@ -42,10 +49,16 @@ public class Hint : MonoBehaviour
 
     public void ShowLeftButton()
     {
+        if (lmbShownAlready)
+            return;
+
+        lmbShownAlready = true;
+
         mouseIcon.SetActive(true);
         lmb.SetActive(false);
         rmb.SetActive(false);
 
+        animatedObjects.Clear();
         animatedObjects.Add(lmb);
 
         blinkLeftTime = blinkSpeed;
@@ -54,10 +67,16 @@ public class Hint : MonoBehaviour
 
     public void ShowRightButton()
     {
+        if (rmbShownAlready)
+            return;
+
+        rmbShownAlready = true;
+
         mouseIcon.SetActive(true);
         lmb.SetActive(false);
         rmb.SetActive(false);
 
+        animatedObjects.Clear();
         animatedObjects.Add(rmb);
 
         blinkLeftTime = blinkSpeed;

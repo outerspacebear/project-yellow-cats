@@ -8,14 +8,12 @@ public class GravityToggler : MonoBehaviour
     [SerializeField] float startGravity = 0f;
     [SerializeField] float targetGravity = 1f;
     // Start is called before the first frame update
+
+    public float delayForHint = 2.0f;
+
     void Start()
     {
         rigidbody.gravityScale = startGravity;
-
-        if (Hint.GetInstance())
-        {
-            Hint.GetInstance().ShowAnyButton();
-        }
     }
 
     // Update is called once per frame
@@ -25,6 +23,15 @@ public class GravityToggler : MonoBehaviour
         {
             rigidbody.gravityScale = targetGravity;
             Destroy(this);
+        }
+
+        if (delayForHint > 0.0f)
+        {
+            delayForHint -= Time.deltaTime;
+            if (delayForHint <= 0.0f && Hint.GetInstance())
+            {
+                Hint.GetInstance().ShowAnyButton();
+            }
         }
     }
 }
