@@ -343,6 +343,7 @@ MonoBehaviour:
   followThis: {fileID: 0}
   leftMostPercentage: 0.05
   rightMostPercentage: 0.3
+  followOffsetPercentage: -0.3
   movePerFrame: 0.02
 --- !u!20 &519420031
 Camera:
