@@ -26,7 +26,7 @@ public class SeedGrower : MonoBehaviour
             if(timeSinceSeedCollision >= spawnDelay)
             {
                 readyToSpawn = false;
-                var plantGuy = Instantiate(plant, new Vector3(seed.transform.position.x, transform.position.y, seed.transform.position.z), transform.rotation) as Plant;
+                var plantGuy = Instantiate(plant, new Vector3(seed.transform.position.x, seed.transform.position.y, seed.transform.position.z), transform.rotation) as Plant;
                 plantGuy.GetComponentInChildren<Rigidbody2D>().AddForce(transform.up * spawnForce);
                 PlantLocator.GetInstance().SwitchToPlant(plantGuy);
                 SeedCounter.seedsPlanted++;
@@ -43,11 +43,13 @@ public class SeedGrower : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Seed"))
         {
-            foreach(var collider in moundColliders)
+            seed = collision.gameObject;
+            seed.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+            foreach (var collider in moundColliders)
             {
                 collider.enabled = false;
             }
-            seed = collision.gameObject;
             readyToSpawn = true;
 
             GetComponentInParent<Animator>().SetBool("animateEnable", true);
