@@ -85,7 +85,7 @@ public class Hint : MonoBehaviour
 
     public void HideHints()
     {
-        mouseIcon.SetActive(true);
+        mouseIcon.SetActive(false);
         lmb.SetActive(false);
         rmb.SetActive(false);
 

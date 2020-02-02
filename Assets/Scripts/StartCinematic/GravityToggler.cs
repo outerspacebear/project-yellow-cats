@@ -24,6 +24,7 @@ public class GravityToggler : MonoBehaviour
             if (Hint.GetInstance())
             {
                 Hint.GetInstance().HideHints();
+                delayForHint = 0.0f;
             }
 
             rigidbody.gravityScale = targetGravity;
