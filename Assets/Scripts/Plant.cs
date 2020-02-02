@@ -39,10 +39,14 @@ public class Plant : MonoBehaviour
             growthController.FinishGrowing();
     }
 
-    public void Grow()
+    public void Grow(bool controlledByPlayer)
     {
         if (stem.Length() < maxLength)
+        {
             growthController.Grow();
+            if (controlledByPlayer)
+                objectAimer2D.Aim();
+        }
         else
             growthController.FinishGrowing();
     }

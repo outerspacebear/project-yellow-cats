@@ -8,13 +8,8 @@ public class ObjectAimer2D : MonoBehaviour
     [SerializeField] bool aimAtMouse = true;
     [SerializeField] Transform target;
     [SerializeField] bool onlyWhenGrowing = true;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void Aim()
     {
         Vector2 direction = Vector2.zero;
         if (onlyWhenGrowing && !Input.GetButton("Grow"))

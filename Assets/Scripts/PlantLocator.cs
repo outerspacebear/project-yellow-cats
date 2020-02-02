@@ -6,7 +6,7 @@ public class PlantLocator : MonoBehaviour
 {
     [SerializeField] public Plant currentPlant = null;
 
-    public float autoGrowthLength = 2.0f;
+    public float autoGrowthLength = 0.5f;
     public float growthRemaining = 0.0f;
 
 
@@ -38,7 +38,7 @@ public class PlantLocator : MonoBehaviour
         {
             growthRemaining -= Time.deltaTime;
             if (growthRemaining > 0.0f)
-                currentPlant.Grow();
+                currentPlant.Grow(false);
             else
             {
                 growthRemaining = 0.0f;
@@ -50,7 +50,7 @@ public class PlantLocator : MonoBehaviour
             if (Input.GetButtonDown("Grow"))
                 currentPlant.StartGrowing();
             else if (Input.GetButton("Grow"))
-                currentPlant.Grow();
+                currentPlant.Grow(true);
             else if (Input.GetButtonUp("Grow"))
                 currentPlant.FinishGrowing();
             else if (Input.GetButton("Retract"))
