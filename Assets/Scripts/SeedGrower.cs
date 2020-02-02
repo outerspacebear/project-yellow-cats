@@ -26,7 +26,7 @@ public class SeedGrower : MonoBehaviour
             if(timeSinceSeedCollision >= spawnDelay)
             {
                 readyToSpawn = false;
-                var plantGuy = Instantiate(plant, seed.transform.position, transform.rotation) as Plant;
+                var plantGuy = Instantiate(plant, new Vector3(seed.transform.position.x, transform.position.y, seed.transform.position.z), transform.rotation) as Plant;
                 plantGuy.GetComponentInChildren<Rigidbody2D>().AddForce(transform.up * spawnForce);
                 PlantLocator.currentPlant = plantGuy;
                 SeedCounter.seedsPlanted++;
