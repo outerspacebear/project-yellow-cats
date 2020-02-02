@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
 public class SeedGrower : MonoBehaviour
@@ -14,6 +15,7 @@ public class SeedGrower : MonoBehaviour
     [SerializeField] Collider2D[] moundColliders;
     [SerializeField] bool endGame = false;
     [SerializeField] GameObject animation;
+    [SerializeField] Image endGameImage;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +42,8 @@ public class SeedGrower : MonoBehaviour
                         sprite.enabled = false;
                     }
                     animation.GetComponent<Animator>().SetBool("play", true);
+                    //endGameImage.enabled = true;
+                    endGameImage.gameObject.GetComponent<ImageExpander>().enabled = true;
                 }
                 SeedCounter.IncrementSeedsPlanted();
                 Destroy(seed);
