@@ -34,13 +34,10 @@ public class Attractor : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag(groundTag))
+        targetObject = PlantLocator.GetInstance().currentPlant;
+        if (collision.gameObject.CompareTag(groundTag))
         {
             readyForAttraction = true;
-            if(targetObject == null)
-            {
-                targetObject = PlantLocator.GetInstance().currentPlant;
-            }
         }
         else if(collision.gameObject.CompareTag(triggerObjectTag) && readyForAttraction && Vector2.Angle(targetObject.transform.up, Vector2.up) >= attractionStopAngle)
         {
